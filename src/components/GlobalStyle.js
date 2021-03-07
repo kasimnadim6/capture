@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     background:#1b1b1b;
     font-family: 'Ubuntu', sans-serif;
+    overflow-x:hidden;
 }
 button{
     font-family: inherit;

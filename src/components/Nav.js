@@ -31,6 +31,9 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   padding: 1rem 10rem;
   background: #282828;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   #logo {
     color: white;
     font-family: "Stick", sans-serif;

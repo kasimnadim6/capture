@@ -14,6 +14,7 @@ import {
   lineAnimation,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollToTop from "../components/ScrollToTop";
 
 const OurWork = () => {
   const [element1, controls1] = useScroll();
@@ -79,6 +80,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
+      <ScrollToTop />
     </Work>
   );
 };
