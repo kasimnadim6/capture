@@ -79,6 +79,12 @@ const Cards = styled.div`
 const Card = styled.div`
   flex-basis: 20rem;
   font-size: 1rem;
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .icon {
     display: flex;
     align-items: center;

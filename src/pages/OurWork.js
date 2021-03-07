@@ -90,6 +90,9 @@ const Work = styled(motion.div)`
   overflow: hidden;
   padding: 5rem 10rem;
   font-family: inherit;
+  @media (max-width: 1300px) {
+    padding: 1rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }
@@ -97,10 +100,13 @@ const Work = styled(motion.div)`
 
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
+  @media (max-width: 1300px) {
+    padding-bottom: 2rem;
+  }
   .line {
     height: 0.2rem;
     background: #23d997;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   img {
     width: 100%;

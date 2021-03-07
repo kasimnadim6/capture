@@ -49,12 +49,19 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    @media (max-width: 1300px) {
+      padding: 2rem 0;
+    }
     li {
       position: relative;
       &:not(:first-child) {
         padding-left: 6rem;
       }
     }
+  }
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    justify-content: space-around;
   }
 `;
 export default Nav;

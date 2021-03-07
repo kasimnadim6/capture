@@ -6,6 +6,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    @media(max-width:1300px){
+        font-size:70%;
+        overflow-x:hidden
+    }
+}
 body{
     background:#1b1b1b;
     font-family: 'Ubuntu', sans-serif;
