@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { MovieState } from "../movieState";
 import Award from "../components/Award";
+
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 const MovieDetail = () => {
   const url = useHistory().location.pathname;
   const [movies, setMovies] = useState(MovieState);
@@ -16,7 +20,12 @@ const MovieDetail = () => {
   }, [movies, url]);
 
   return (
-    <>
+    <motion.div
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
       {movie && (
         <Details>
           <HeadLine>
@@ -33,7 +42,7 @@ const MovieDetail = () => {
           </ImageDisplay>
         </Details>
       )}
-    </>
+    </motion.div>
   );
 };
 const Details = styled.div`

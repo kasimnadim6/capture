@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 const Award = ({ award }) => {
   return (
-    <AwardStle>
+    <AwardStyle>
       <h2>{award.title}</h2>
       <div className='line'></div>
       <p>{award.description}</p>
-    </AwardStle>
+    </AwardStyle>
   );
 };
 
-const AwardStle = styled.div`
+const AwardStyle = styled.div`
   padding: 5rem;
   h2 {
     font-size: 2rem;
