@@ -8,14 +8,7 @@ const Toggle = ({ children, title }) => {
     <motion.div layout className='question' onClick={() => setToggle(!toggle)}>
       <motion.h4 layout>{title}</motion.h4>
       {toggle ? children : ""}
-      {!toggle && <div className='faq-line'></div>}
-      {toggle && (
-        <motion.div
-          variants={lineAnimation}
-          className='faq-line'
-          style={{ background: "#23d997" }}
-        ></motion.div>
-      )}
+      <div className='faq-line'></div>
     </motion.div>
   );
 };

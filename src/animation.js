@@ -23,7 +23,7 @@ export const titleAnimation = {
   show: { y: 0, transition: { duration: 0.5 } },
 };
 export const fade = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, transition: { duration: 0.75 } },
   show: { opacity: 1, transition: { duration: 0.75 } },
 };
 export const photoAnimation = {
@@ -53,4 +53,8 @@ export const sliderContainer = {
       ease: "easeOut",
     },
   },
+};
+export const scrollRevealAnimation = {
+  hidden: { opacity: 0, scale: 0.7, transition: { duration: 1 } },
+  show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
